@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { CourseComponent } from './course/course.component';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { BootstrapPannelComponent } from './bootstrap-pannel/bootstrap-pannel.component';
+import { LikeComponent } from './like/like.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BootstrapPannelComponent } from './bootstrap-pannel/bootstrap-pannel.co
     SummaryPipe,
     CustomTitleCase,
     FavoriteComponent,
-    BootstrapPannelComponent
+    BootstrapPannelComponent,
+    LikeComponent
   ],
   imports: [
     BrowserModule,

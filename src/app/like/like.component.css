@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.container h2{
+    margin-left: 10px;
+}
+.grey{
+    color: #cccccc;
+}
+.pink{
+    color: deeppink;
+}

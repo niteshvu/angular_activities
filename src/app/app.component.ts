@@ -11,6 +11,10 @@ export class AppComponent {
     title: "Title",
     isFavorite: true
   }
+  like = {
+    numberOfLikes : 5,
+    isClicked: false
+  }
   onFavoriteChanged = (payload: EventPayLoad) => {
     console.log(payload.newValue);
   }
