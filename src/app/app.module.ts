@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CourseComponent } from './course/course.component';
 import { FavoriteComponent } from './favorite/favorite.component';
+import { BootstrapPannelComponent } from './bootstrap-pannel/bootstrap-pannel.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FavoriteComponent } from './favorite/favorite.component';
     CourseComponent,
     SummaryPipe,
     CustomTitleCase,
-    FavoriteComponent
+    FavoriteComponent,
+    BootstrapPannelComponent
   ],
   imports: [
     BrowserModule,
