@@ -8,6 +8,7 @@ import {CustomTitleCase} from './customTitleCase.pipe';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CourseComponent } from './course/course.component';
+import { FavoriteComponent } from './favorite/favorite.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CourseComponent } from './course/course.component';
     CoursesComponent,
     CourseComponent,
     SummaryPipe,
-    CustomTitleCase
+    CustomTitleCase,
+    FavoriteComponent
   ],
   imports: [
     BrowserModule,

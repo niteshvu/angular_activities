@@ -6,7 +6,7 @@
         except:string[] = []; 
         transform(value: string, ...except: string[]){ // accepts any number of arguments
             this.except = [...except];
-            console.log(this.except);
+            //console.log(this.except);
             if(!value) return null;
     
             let words = value.split(" ");
