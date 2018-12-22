@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { EventPayLoad } from './favorite/favorite.component';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,7 @@ export class AppComponent {
     title: "Title",
     isFavorite: true
   }
-  onFavoriteChanged = () => {
-    console.log("hello");
+  onFavoriteChanged = (payload: EventPayLoad) => {
+    console.log(payload.newValue);
   }
 }
