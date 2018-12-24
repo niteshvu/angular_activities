@@ -11,6 +11,7 @@ import { CourseComponent } from './course/course.component';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { BootstrapPannelComponent } from './bootstrap-pannel/bootstrap-pannel.component';
 import { LikeComponent } from './like/like.component';
+import { InputFormatDirective } from './input-format.directive';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { LikeComponent } from './like/like.component';
     CustomTitleCase,
     FavoriteComponent,
     BootstrapPannelComponent,
-    LikeComponent
+    LikeComponent,
+    InputFormatDirective
   ],
   imports: [
     BrowserModule,
