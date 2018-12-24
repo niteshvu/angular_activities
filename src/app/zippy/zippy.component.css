@@ -1,0 +1,19 @@
+.zippy{
+    border: 1px solid grey;
+    width: 200px;
+}
+.zippy-heading{
+    padding: 10px;
+}
+.zippy-body{
+    padding: 10px;
+}
+.active{
+    background-color: rgb(230, 230, 230);
+}
+.glyphicon{
+    font-size: 10px;
+}
+span{
+    float: right;
+}
