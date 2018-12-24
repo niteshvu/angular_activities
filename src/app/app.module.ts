@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { CoursesComponent } from './courses.component';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CoursesSerivce } from './courses.service';
 import {SummaryPipe} from './summary.pipe'
 import {CustomTitleCase} from './customTitleCase.pipe';
@@ -13,6 +13,7 @@ import { BootstrapPannelComponent } from './bootstrap-pannel/bootstrap-pannel.co
 import { LikeComponent } from './like/like.component';
 import { InputFormatDirective } from './input-format.directive';
 import { ZippyComponent } from './zippy/zippy.component';
+import { SignupFormComponent } from './signup-form/signup-form.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +26,15 @@ import { ZippyComponent } from './zippy/zippy.component';
     BootstrapPannelComponent,
     LikeComponent,
     InputFormatDirective,
-    ZippyComponent
+    ZippyComponent,
+    SignupFormComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [CoursesSerivce],
   bootstrap: [AppComponent]
