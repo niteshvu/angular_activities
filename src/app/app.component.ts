@@ -13,7 +13,7 @@ export class AppComponent {
   }
   like = {
     numberOfLikes : 5,
-    isClicked: false
+    isClicked: true
   }
   onFavoriteChanged = (payload: EventPayLoad) => {
     console.log(payload.newValue);
