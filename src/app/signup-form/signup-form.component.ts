@@ -1,6 +1,6 @@
 import { UsernameValidators } from './username.validators';
 import { Component } from '@angular/core';
-import {FormGroup, FormControl, Validator, Validators} from '@angular/forms';
+import {FormGroup, FormControl, Validator, Validators, FormBuilder} from '@angular/forms';
 
 @Component({
   selector: 'signup-form',
@@ -21,4 +21,17 @@ export class SignupFormComponent {
       invalidLogin: true
     })
   }
+
+  //using the FormBuilder for nested groups
+  // constructor(fb: FormBuilder){
+  //   this.form  = fb.group({
+  //     name: ['', Validators.required],
+  //     contact: fb.group({
+  //       email: [],
+  //       phone: []
+  //     }),
+  //     topics: fb.array([])
+  //   })
+  // }
+
 }
