@@ -13,6 +13,7 @@
                 <div *ngIf = "username.errors.shouldBeUnique">Username is already taken</div>
 
             </div>
+            <div *ngIf = "username.pending">Checking for uniqueness..</div>
     </div>
     <div class="form-group">
         <label for="password">Password</label>
