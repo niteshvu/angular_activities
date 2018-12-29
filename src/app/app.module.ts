@@ -1,4 +1,7 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { ChangePasswordComponent } from './change-password/change-password.component';
+import { BrowserModule }    from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
 import { CoursesComponent } from './courses.component';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -16,6 +19,8 @@ import { ZippyComponent } from './zippy/zippy.component';
 import { SignupFormComponent } from './signup-form/signup-form.component';
 // import { NewCourseFormComponentComponent } from './new-course-form-component/new-course-form-component.component';
 import { NewCourseFormComponent } from './new-course-form/new-course-form.component';
+import { PasswordResetComponent } from './password-reset/password-reset.component';
+import { PostsComponent } from './posts/posts.component';
 
 @NgModule({
   declarations: [
@@ -30,13 +35,17 @@ import { NewCourseFormComponent } from './new-course-form/new-course-form.compon
     InputFormatDirective,
     ZippyComponent,
     SignupFormComponent,
-    NewCourseFormComponent
+    NewCourseFormComponent,
+    PasswordResetComponent,
+    ChangePasswordComponent,
+    PostsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpModule
   ],
   providers: [CoursesSerivce],
   bootstrap: [AppComponent]
