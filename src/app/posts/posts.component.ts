@@ -26,4 +26,11 @@ export class PostsComponent {
         this.posts.splice(0, 0, post);
       })
   }
+
+  updatePost(post){
+    this.http.patch('https://jsonplaceholder.typicode.com/posts/' + post.id, JSON.stringify({title : 'hello'}) )
+      .subscribe(response => {
+        console.log(response.json())
+      })
+  }
 }
