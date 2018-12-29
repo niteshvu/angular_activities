@@ -33,4 +33,13 @@ export class PostsComponent {
         console.log(response.json())
       })
   }
+
+  deletePost(post){
+    this.http.delete('https://jsonplaceholder.typicode.com/posts/' + post.id)
+      .subscribe(response => {
+        let index = this.posts.indexOf(post);
+        this.posts.splice(index, 1);
+      })
+      console.log(post.id);
+  }
 }
